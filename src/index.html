@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+<body>
+  <section>
+    <div class="container-gallery">
+      <form class="form-gallery">
+        <label for="query-for-search">
+          <input type="text" class="form-gallery-input" name="query-for-search" id="query-for-search"
+            placeholder="Search-images..." required />
+        </label>
+        <button class="form-gallery-btn" type="submit">Search</button>
+      </form>
+      <ul class="gallery-list"></ul>
+      <div class = "load-more-div">
+        <button class="load-more hidden">Load more</button>
+        <span class="hidden loader" class="form-gallery-btn"></span>
+      </div>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
